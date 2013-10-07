@@ -3,7 +3,7 @@ package edu.knowitall.entitylinking.extended.utils
 
 object TipsterData {
   
-  private val tipsterResourcePath = "/edu/knowitall/tac2013/entitylinking/TipsterGazetteer.txt"
+  private val tipsterResourcePath = "/edu/knowitall/entitylinking/extended/utils/TipsterGazetteer.txt"
   private val cityProvincePattern = """([^\(]+)\(CITY.+?([^\(\)]+)\(PROVINCE.*""".r
   private val cityCountryPattern = """([^\(]+)\(CITY.+?([^\(\)]+)\(COUNTRY.*""".r
   

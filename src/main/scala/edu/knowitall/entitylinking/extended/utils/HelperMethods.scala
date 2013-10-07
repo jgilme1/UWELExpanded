@@ -14,7 +14,7 @@ object HelperMethods {
  // val annotationHelper = new NECoStanfordAnnotatorHelperMethods(true);
   private val stateAbbreviationPattern = """(\w+),\s([A-Za-z])\.?([A-Za-z])\.?$""".r
   private val stopWords = {
-    val url = getClass.getResource("/edu/knowitall/tac2013/entitylinking/classifier/stopwords.txt")
+    val url = getClass.getResource("/edu/knowitall/entitylinking/extended/utils/stopwords.txt")
     require(url != null, "Could not find stopwords.txt")
     io.Source.fromURL(url, "UTF8").getLines.flatMap(_.split(",")).map(_.toLowerCase).toSet
   }
